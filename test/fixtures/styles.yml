@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sku: MyString
+  dom: 2015-01-22 09:20:58
+  stock: 1
+  resource: 1
+
+two:
+  sku: MyString
+  dom: 2015-01-22 09:20:58
+  stock: 1
+  resource: 1

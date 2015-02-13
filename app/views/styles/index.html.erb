@@ -1,0 +1,28 @@
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th><%= "SKU"%></th>
+    <th><%= "Manufactured" %></th>
+    <th><%= "Resource" %></th>
+    <th><%= "Stock" %></th>
+    <th><%#= "Stock" %></th>
+    </thead>
+  <tbody>
+  <% @styles.each do |c| %>
+    <tr>
+      <td><%= c.sku %></td>
+      <td><%= c.dom %></td>
+      <td><%= c.resource %></td>
+      <td><%= c.stock %></td>
+      <td><%#= link_to "Edit", edit_company_path(c), :class => 'btn btn-mini btn-primary' %></td>
+      <td><%#= link_to "show", company_path(c), :class => 'btn btn-mini btn-primary' %></td>
+      <td><%#= p.units_in_stock %></td>
+      <td><%#= link_to "Delete", c,:class => 'btn btn-mini btn-danger', method: :delete, data: { confirm: 'Are you sure want to delete this company?' } %></td>
+    
+      <% end %>
+     
+    </tr>  
+    
+  </tbody>
+</table>
+<%= link_to "New Style", new_style_path, :class => 'btn btn-mini btn-primary' %>

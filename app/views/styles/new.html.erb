@@ -1,0 +1,11 @@
+<h1>New Style Form</h1>
+<%= form_for @style do |f| %>
+  <%= f.label :Sku %>
+  <%= f.text_field :sku %><br/>
+  <%= f.label :Manufactured_date %>
+  <%= f.date_field :dom %><br/>
+  <%= f.label :Resource %>
+  <%= f.text_field :resource %><br/>
+  <%= f.submit %>
+
+<% end %>
