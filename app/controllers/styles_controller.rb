@@ -17,6 +17,26 @@ class StylesController < ApplicationController
     @styles = Style.all
   end
 
+  def edit
+    @style = Style.find(params[:id])
+  end
+
+  def update
+    @style = Style.find(params[:id])
+    @style.update_attributes(style_params)
+    redirect_to styles_path
+  end
+
+  def show
+    @style = Style.find(params[:id])
+  end
+
+  def destroy
+    @style = Style.find(params[:id])
+    @style.delete
+    redirect_to styles_path
+  end
+
   private
   def style_params
     params.require(:style).permit(:sku,:dom,:resource)

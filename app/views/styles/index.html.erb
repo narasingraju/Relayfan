@@ -14,10 +14,10 @@
       <td><%= c.dom %></td>
       <td><%= c.resource %></td>
       <td><%= c.stock %></td>
-      <td><%#= link_to "Edit", edit_company_path(c), :class => 'btn btn-mini btn-primary' %></td>
-      <td><%#= link_to "show", company_path(c), :class => 'btn btn-mini btn-primary' %></td>
+      <td><%= link_to "Edit", edit_style_path(c), :class => 'btn btn-mini btn-primary' %></td>
+      <td><%= link_to "show", style_path(c), :class => 'btn btn-mini btn-primary' %></td>
       <td><%#= p.units_in_stock %></td>
-      <td><%#= link_to "Delete", c,:class => 'btn btn-mini btn-danger', method: :delete, data: { confirm: 'Are you sure want to delete this company?' } %></td>
+      <td><%= link_to "Delete", c,:class => 'btn btn-mini btn-danger', method: :delete, data: { confirm: 'Are you sure want to delete this style?' } %></td>
     
       <% end %>
      
