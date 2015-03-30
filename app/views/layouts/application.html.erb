@@ -9,7 +9,11 @@
 <body>
 
 <%= yield %>
-
+<% if user_signed_in? %>
+  <%= link_to "Sign out", destroy_user_session_path,:class => 'btn btn-mini btn-danger',:method => :delete %>
+<% else %>
+  <%= link_to "Sign in", new_user_session_path,:class => 'btn btn-mini btn-primary' %>
+<% end %>
 
 </body>
 </html>
